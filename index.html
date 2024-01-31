@@ -1,76 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Validator</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="./img/email.svg" alt="emaillogo"><span>
-                    EmailValidator
-                </span></div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Contact Us</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img src="./img/email.svg" alt="emaillogo" /><span>
+            EmailValidator
+          </span>
+        </div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <div class="container">
-            <h1>Enter your email to validate</h1>
-            <br>
+      <div class="container">
+        <h1>Enter your email to validate</h1>
+        <br />
 
-            <form action="/submit" method="post">
-                <!-- Taking username -->
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="enter your username">
-                <br><br>
-                
-                <!-- Taking password -->
-                <label for="password">Password:</label>
-                <input type="text" id="password" name="password" placeholder="enter your password" required>
-                <br><br>
+        <form action="/submit" method="post">
+          <!-- Taking username -->
+          <label for="username">Email:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your email to validate"
+          />
+          <br /><br />
 
-                <!-- Taking gender -->
-                <label>Gender:</label>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
-                <br><br>
+          <!-- Taking password -->
+          <label for="password">Password:</label>
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="enter your password"
+            required
+          />
+          <br /><br />
 
-                <!-- Submit -->
-            </form>
-            
-            
-                  <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">New around here? Sign up</a>
-                <a class="dropdown-item" href="#">Forgot password?</a>
-              </div>
+          <!-- Taking gender -->
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+          <br /><br />
 
+          <!-- Submit button-->
+          <!-- <input id="submitbtn " class="btn" type="submit" value="submit">  -->
+
+          <button id="submitbtn" class="btn" type="button" value="submit">
+            Submit
+          </button>
+
+          <!-- <button id="submitbtn" class="btn" type="button">Submit</button> -->
+        </form>
+
+        <div id="resultcontainer" class="resultOuterContainer">
+          <h2>Result of the email</h2>
+          <div id="resultcontainer">
+          </div>
         </div>
+      </div>
     </main>
 
     <footer>
-        <!-- <div class="footer-outer-container">
+      <!-- <div class="footer-outer-container">
             Copyright @ EmailValidator | All rights reserved &copy;
         </div>
         <div class="footer-inner-container">Made with &hearts; by Charu</div> -->
-        <div class="footer-outer-container">
-            <p>Copyright @ EmailValidator | All rights reserved &copy;</p>
-           
-            <p class="author">Made with &hearts; by Charu</p>
-        </div>
+      <div class="footer-outer-container">
+        <p>Copyright @ EmailValidator | All rights reserved &copy;</p>
+
+        <p class="author">Made with &hearts; by Charu</p>
+      </div>
     </footer>
-    
+
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
